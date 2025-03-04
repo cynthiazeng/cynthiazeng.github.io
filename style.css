@@ -370,3 +370,18 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+.writing-entry h4 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.writing-entry a {
+    color: #0d8fba;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.writing-entry a:hover {
+    text-decoration: underline;
+}
