@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>By Zoa</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        @page {
+            size: A5;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'EB Garamond', Georgia, serif;
+            background: #fff;
+            color: #111;
+        }
+
+        .page {
+            width: 148mm;
+            height: 210mm;
+            padding: 22mm 18mm 18mm;
+            page-break-after: always;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* Cover */
+        .cover {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .cover-title {
+            font-size: 38pt;
+            font-weight: 400;
+            letter-spacing: 0.18em;
+            color: #111;
+            text-transform: uppercase;
+        }
+        .cover-subtitle {
+            margin-top: 10mm;
+            font-size: 10pt;
+            letter-spacing: 0.22em;
+            color: #aaa;
+            text-transform: uppercase;
+        }
+
+        /* Poem pages */
+        .poem-page {
+            justify-content: center;
+        }
+
+        .poem-title {
+            font-size: 11pt;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #111;
+            margin-bottom: 9mm;
+        }
+
+        .poem-body {
+            font-size: 12pt;
+            line-height: 1.85;
+            color: #222;
+        }
+
+        .stanza {
+            margin-bottom: 6mm;
+        }
+
+        .stanza:last-child {
+            margin-bottom: 0;
+        }
+
+        .stage-direction {
+            font-style: italic;
+            color: #999;
+        }
+
+        .translation {
+            margin-top: 9mm;
+            padding-top: 7mm;
+            border-top: 0.5px solid #ddd;
+            color: #555;
+            font-size: 11pt;
+        }
+
+        .poem-date {
+            position: absolute;
+            bottom: 14mm;
+            left: 18mm;
+            font-size: 8.5pt;
+            color: #bbb;
+            letter-spacing: 0.06em;
+        }
+
+        /* Page number */
+        .page-num {
+            position: absolute;
+            bottom: 14mm;
+            right: 18mm;
+            font-size: 8.5pt;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cover -->
+    <div class="page cover">
+        <div class="cover-title">By Zoa</div>
+        <div class="cover-subtitle">Poems</div>
+    </div>
+
+    <!-- Meaning of Life -->
+    <div class="page poem-page">
+        <div class="poem-title">Meaning of Life</div>
+        <div class="poem-body">
+            <div class="stanza">What's the meaning of life?<br>
+Bitterness of coffee,<br>
+or the sweet after taste.<br>
+the gentleness of milk foam</div>
+            <div class="stanza">After days floating on the sailing boat,<br>
+with a sense of direction,<br>
+but the trajectory in the hands of wind,<br>
+isn't it life?<br>
+we know where we are going,<br>
+we control the steering wheel, our sails,<br>
+but we wait for wind,<br>
+borrow the force of wind.</div>
+            <div class="stanza">it's about going somewhere,<br>
+but about patience, strategy.</div>
+        </div>
+        <div class="poem-date">July 26, 2025 · London</div>
+        <div class="page-num">1</div>
+    </div>
+
+    <!-- Under the Stars -->
+    <div class="page poem-page">
+        <div class="poem-title">Under the Stars</div>
+        <div class="poem-body">
+            <div class="stanza">Under the stars,<br>
+you kissed me.<br>
+Moon-lit sky,<br>
+summery night,</div>
+            <div class="stanza">How long does time last?</div>
+            <div class="stanza">Time is stretched out in the deep blue sky,<br>
+into the universe,<br>
+and beyond the edge of what we know,<br>
+time stops to matter.<br>
+the world, as we know it, stops making sense,<br>
+for the moment then,<br>
+then &amp; then,<br>
+it seems to be the meaning of everything.</div>
+            <div class="stanza">We feel alive<br>
+in your arms,<br>
+along your heart beat</div>
+            <div class="stanza">Is this real, is love real.</div>
+        </div>
+        <div class="poem-date">August 28, 2025 · Cambridge</div>
+        <div class="page-num">2</div>
+    </div>
+
+    <!-- Montana Land -->
+    <div class="page poem-page">
+        <div class="poem-title">Montana Land</div>
+        <div class="poem-body">
+            <div class="stanza">Past, present, future,<br>
+those are terms threaded by time</div>
+            <div class="stanza">Here, now, there, then,<br>
+spaces and distances are only relative</div>
+            <div class="stanza">Some days, months, years<br>
+pass by in a haze.<br>
+Whilst other seconds of moments,<br>
+we hold on through eternity.</div>
+            <div class="stanza">Our past brought you and me<br>
+together, here, now, in this present moment.</div>
+            <div class="stanza"><span class="stage-direction">[Pause]</span></div>
+            <div class="stanza"><span class="stage-direction">One, two, three<br>[Breathe in, Breathe out]</span></div>
+            <div class="stanza">Can we observe those moments of entanglement<br>
+that alters the course of our paths forward?</div>
+            <div class="stanza">Is an "ending" necessary for time to make sense?<br>
+Is pain necessary for us to love?<br>
+Are wars necessary for us to make peace?</div>
+            <div class="stanza">Mistakes change the course of civilizations.<br>
+Imperfections undermines humanity.<br>
+Are regrets and the lack of second chances<br>
+what makes life worth living?<br>
+With courage and compassion.</div>
+            <div class="stanza">Time seems to go on.<br>
+Cry, river, cry,<br>
+let it nourish the soul and wash away those scars</div>
+            <div class="stanza">Tomorrow, the sun rises again,<br>
+on this vast Montana Land.</div>
+        </div>
+        <div class="poem-date">September 13, 2025</div>
+        <div class="page-num">3</div>
+    </div>
+
+    <!-- Dancing in the Blue -->
+    <div class="page poem-page">
+        <div class="poem-title">Dancing in the Blue</div>
+        <div class="poem-body">
+            <div class="stanza">There is nothing but blue,<br>
+Deep and endless blue.</div>
+            <div class="stanza">No boundaries, borders, shapes, or time.<br>
+Some rays of sunlight<br>
+attempts to penetrate,<br>
+but gave up and got lost in the blue.</div>
+            <div class="stanza">An irresistible invitation<br>
+to the endless unknown,<br>
+danger, adventure.</div>
+            <div class="stanza">Though I feel a sense of fear towards the unknown,<br>
+mixed with danger, adventure, challenge.</div>
+            <div class="stanza">Probably there is nothing.<br>
+It's me having a monologue with my emotions.<br>
+The Blue seems undisturbed at all.</div>
+            <div class="stanza">To keep going down,<br>
+how long can my breath hold?<br>
+Beneath me, it's death, it's the Blue, quietness, and the end of time.<br>
+Turning back,<br>
+it's life, light,<br>
+it's the world as I know it.</div>
+            <div class="stanza">How lonely it is to be a fish,<br>
+with 3 dimensions of freedom,<br>
+with the freedom comes loneliness and quietness.<br>
+Swimming around,<br>
+no sounds, no conversations,<br>
+just meditation with the Blue.</div>
+            <div class="stanza">For the fish, the land is a place of joy, he heard,<br>
+full of entertainment, to rid the loneliness.<br>
+One day,<br>
+he gave up one dimension of freedom,<br>
+and learned to walk and talk,<br>
+at first with clumsy feet and clumsy mouth.<br>
+But over the years,<br>
+he perfected his skills and even learned to dance on land!</div>
+            <div class="stanza">The fish earned a respectable position in society.<br>
+He has made it! And he is proud!<br>
+He made a family, living in a big house.</div>
+            <div class="stanza">One day, on a lazy afternoon when he took his son fishing,<br>
+his son asked: "where did you come from daddy?"<br>
+He looked at the sea and hesitated.<br>
+"A far place, son."<br>
+The fish said no more.</div>
+            <div class="stanza">That night, he had a dream,<br>
+and he was dancing again in the Blue.</div>
+        </div>
+        <div class="poem-date">February 25, 2026</div>
+        <div class="page-num">4</div>
+    </div>
+
+    <!-- Life is -->
+    <div class="page poem-page">
+        <div class="poem-title">Life is</div>
+        <div class="poem-body">
+            <div class="stanza">Life is seeing,</div>
+            <div class="stanza">In the darkness,<br>
+seeing the stars.</div>
+            <div class="stanza">It IS hearing,<br>
+the joys of silence.<br>
+Touching<br>
+the shapes of void.</div>
+            <div class="stanza">"Welcome to live"<br>
+You see my soul,<br>
+and I see yours.</div>
+        </div>
+        <div class="poem-date">March 12, 2026</div>
+        <div class="page-num">5</div>
+    </div>
+
+    <!-- Hope -->
+    <div class="page poem-page">
+        <div class="poem-title">Hope</div>
+        <div class="poem-body">
+            <div class="stanza">I see ruins, and darkness.<br>
+Some scattered light — faint, but newborn.</div>
+            <div class="stanza">They are hope.<br>
+They will ignite.</div>
+            <div class="stanza">The stars above guide them,<br>
+born of the past and the future —<br>
+for the stars and the light have always been one.</div>
+            <div class="stanza">Gentle moonlight falls upon the ruins,<br>
+peaceful music drifts and spreads.</div>
+            <div class="translation">
+                <div class="stanza">我看到废墟，和灰暗，<br>
+一些零星的光，微弱，但新生的光</div>
+                <div class="stanza">它们是希望<br>
+它们将燃烧。</div>
+                <div class="stanza">星空在上指引着初生的光<br>
+星星是过去和未来。<br>
+它们和光是同类人</div>
+                <div class="stanza">温柔的光洒在在废墟，<br>
+平和的音乐散漫开来</div>
+            </div>
+        </div>
+        <div class="poem-date">April 3, 2026</div>
+        <div class="page-num">6</div>
+    </div>
+
+    <!-- Expired Love -->
+    <div class="page poem-page">
+        <div class="poem-title">Expired Love</div>
+        <div class="poem-body">
+            <div class="stanza">Remember when our love was sweet and tangy?<br>
+Now it's gone bad—<br>
+poisonous, bitter, contaminated.</div>
+            <div class="stanza">Does love have an expiration date?</div>
+        </div>
+        <div class="poem-date">May 5, 2026</div>
+        <div class="page-num">7</div>
+    </div>
+
+    <!-- The Love Story of Fire and Ice -->
+    <div class="page poem-page">
+        <div class="poem-title">The Love Story of Fire and Ice</div>
+        <div class="poem-body">
+            <div class="stanza">He cradled a burning,<br>
+pulsing heart in his palms,<br>
+to warm my heart of ice.</div>
+            <div class="stanza">Ice and fire melted into each other.<br>
+My icy heart gazed upon the heart beating for me—<br>
+A crack opened in the ice.<br>
+Warm tears streamed from the crack.<br>
+An awakened heart began to beat.</div>
+            <div class="stanza">That heart had been awake all along—<br>
+it lacked the courage to shatter its icy shield.</div>
+            <div class="stanza">By then, the fire had gone out.</div>
+        </div>
+        <div class="poem-date">August 5, 2026</div>
+        <div class="page-num">8</div>
+    </div>
+
+    <!-- Birds are Singing -->
+    <div class="page poem-page">
+        <div class="poem-title">Birds are Singing</div>
+        <div class="poem-body">
+            <div class="stanza">My heart is beating,<br>
+within it, you.</div>
+            <div class="stanza">Tomorrow, maybe we meet again.<br>
+Maybe not.</div>
+            <div class="stanza">For the first time since you left, I smiled.<br>
+I wonder how you are, my dear—<br>
+if I still linger in your heart,<br>
+if the wounds I left behind have healed,<br>
+and whether if they've scarred.</div>
+            <div class="stanza">I feel you.<br>
+So you must feel me too.<br>
+Somewhere in another dimension,<br>
+You must be right beside me.</div>
+        </div>
+        <div class="poem-date">August 25, 2026</div>
+        <div class="page-num">9</div>
+    </div>
+
+</body>
+</html>
